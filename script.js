@@ -109,11 +109,14 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
 
-$('.button').click(function() {
+$('form').submit(function(event) {
   if($('.email').val().match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
     $('.email').prop("disabled", true);
     $('.email').removeClass('error');
-    return $('.button').addClass('subscribed');
+    $('.button').addClass('subscribed');
+    $('.email').val($('.email').val());
+    return true;
   }
-  return $('.email').addClass('error');
+  $('.email').addClass('error');
+  return false;
 });
