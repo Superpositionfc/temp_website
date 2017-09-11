@@ -44,24 +44,24 @@ html, body {
       font-size: 8vw; }
     .landing .content .logo {
       padding-bottom: 20px; }
-    .landing .content .subscribe input {
+    .landing .content .subscribe .email {
       outline: none;
-      border: 2px solid black;
+      border: 0px;
       padding: 7px;
       font-size: 1.1em;
       width: 275px;
-      transition: all 0.40s; }
-      .landing .content .subscribe input:focus {
-        border: 1px solid black;
-        margin: 1px; }
+      transition: all 0.40s;
+      margin-bottom: 8px; }
     .landing .content .subscribe .button {
+      outline: none;
+      border: 0px;
       background-color: white;
-      border: 1px solid black;
       padding: 10px;
       margin: 10px;
       font-size: 1.3em;
       display: inline-block;
-      transition: all 0.40s; }
+      transition: all 0.40s;
+      font-family: 'Roboto Condensed', sans-serif; }
       .landing .content .subscribe .button:hover {
         background-color: black;
         color: white; }

@@ -51,26 +51,25 @@ html, body {
       padding-bottom: 20px;
     }
     .subscribe {
-      input {
+      .email {
         outline: none;
-        border: 2px solid black;
+        border: 0px;
         padding: 7px;
         font-size: 1.1em;
         width: 275px;
         transition: all 0.40s;
-        &:focus {
-          border: 1px solid black;
-          margin: 1px;
-        }
+        margin-bottom: 8px;
       }
       .button {
+        outline: none;
+        border: 0px;
         background-color: white;
-        border: 1px solid black;
         padding: 10px;
         margin: 10px;
         font-size: 1.3em;
         display: inline-block;
         transition: all 0.40s;
+        font-family: 'Roboto Condensed', sans-serif;
         &:hover {
           background-color: black;
           color: white;
