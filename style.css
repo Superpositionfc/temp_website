@@ -52,6 +52,8 @@ html, body {
       width: 275px;
       transition: all 0.40s;
       margin-bottom: 8px; }
+      .landing .content .subscribe .email.error {
+        border: 1px solid red; }
     .landing .content .subscribe .button {
       outline: none;
       border: 0px;
@@ -62,8 +64,18 @@ html, body {
       display: inline-block;
       transition: all 0.40s;
       font-family: 'Roboto Condensed', sans-serif; }
+      .landing .content .subscribe .button span {
+        width: 95px;
+        display: block;
+        overflow: hidden;
+        transition: all 0.6s; }
       .landing .content .subscribe .button:hover {
         background-color: black;
         color: white; }
+      .landing .content .subscribe .button.subscribed {
+        background-color: black;
+        color: white; }
+        .landing .content .subscribe .button.subscribed span {
+          width: 107px; }
 
 /*# sourceMappingURL=style.css.map */

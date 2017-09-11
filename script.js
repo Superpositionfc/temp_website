@@ -107,5 +107,13 @@ particlesJS("particles-js", {
     }
   },
   "retina_detect": true
-}
-);
+});
+
+$('.button').click(function() {
+  if($('.email').val().match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+    $('.email').prop("disabled", true);
+    $('.email').removeClass('error');
+    return $('.button').addClass('subscribed');
+  }
+  return $('.email').addClass('error');
+});
