@@ -101,6 +101,21 @@ body {
         }
       }
     }
+    @media(max-width: 800px) {
+      margin-bottom: 0px;
+      .logo img {
+        width: 80%;
+        height: auto;
+      }
+      .date {
+        font-size: 3em;
+      }
+      .subscribe {
+        .email {
+          width: 90%;
+        }
+      }
+    }
   }
 }
 

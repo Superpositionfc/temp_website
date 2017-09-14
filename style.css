@@ -82,6 +82,16 @@ body a {
         color: white; }
         .landing .content .subscribe .button.subscribed span {
           width: 107px; }
+    @media (max-width: 800px) {
+      .landing .content {
+        margin-bottom: 0px; }
+        .landing .content .logo img {
+          width: 80%;
+          height: auto; }
+        .landing .content .date {
+          font-size: 3em; }
+        .landing .content .subscribe .email {
+          width: 90%; } }
 
 .sponsor {
   position: absolute;
