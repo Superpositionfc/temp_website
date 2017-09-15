@@ -49,6 +49,9 @@ body a {
       font-size: 8vw; }
     .landing .content .logo {
       padding-bottom: 20px; }
+      .landing .content .logo img {
+        width: 50vh;
+        max-width: 350px; }
     .landing .content .subscribe .email {
       outline: none;
       border: 0px;
@@ -70,7 +73,7 @@ body a {
       transition: all 0.40s;
       font-family: 'Roboto Condensed', sans-serif; }
       .landing .content .subscribe .button span {
-        width: 95px;
+        width: 4.6em;
         display: block;
         overflow: hidden;
         transition: all 0.6s; }
@@ -81,7 +84,10 @@ body a {
         background-color: black;
         color: white; }
         .landing .content .subscribe .button.subscribed span {
-          width: 107px; }
+          width: 5.4em; }
+    @media (max-height: 800px) {
+      .landing .content {
+        margin-bottom: 0px; } }
     @media (max-width: 800px) {
       .landing .content {
         margin-bottom: 0px; }
